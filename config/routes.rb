@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  # Added for cors
+  resources :cors
+  
   get 'api/expense' => 'expense#list'
   get 'api/expense/:id' => 'expense#read'
   post 'api/expense' => 'expense#create'
