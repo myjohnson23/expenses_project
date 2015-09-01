@@ -1,14 +1,48 @@
 <script id='expenses-template' type="text/template">
-  <li>Date: <%%= date %> </li>
-  <li>Description: <%%= description %> </li>
-  <li>Category: <%%= category %> </li>
-  <li>Amount: <%%= amount %> </li>
+
+        <tr>
+          <td class="shortDateFormat"><%%= jQuery.format.toBrowserTimeZone(date, "yyyy/MM/dd")  %></td>
+          <td><%%= description %></td>
+          <td><%%= category %></td>
+          <td><%%= amount %></td>
+        </tr>
+
 </script>
 
 
 
 <h1>Expenses and Budget</h1>
 
-<ul id='expenses-list'>
-
-</ul>
+<table class="table table-striped">
+  <thead>
+      <tr>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Category</th>
+      <th>Amount</th>
+      <th></th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <form action="api/expense" method="post">
+        <td><input type="date" name="date" placeholder="2015-08-31"></td>
+        <td><input type="text" name="description" placeholder="Your text here..."></td>
+        <td><input type="text" name="category" placeholder="Home"></td>
+        <td><input type="text" name="amount" placeholder="100"></td>
+        <td><input type="submit"></td>
+      </form>
+    </tr>
+  </tbody>
+  <tbody id="expenses-list">
+    <!-- <tr>
+      <form class="" action="api/expense" method="post">
+      <td><input type="Date" name="date" placeholder="12-25-2015"></td>
+      <td><input type="text" name="description" placeholder="Enter description..."></td>
+      <td><input type="text" name="category" placeholder="Home"></td>
+      <td><input type="text" name="amount" placeholder="$10.00"></td>
+      <td><input type="submit" name="AddTrans"></td>
+      </form>
+    </tr> -->
+  </tbody>
+</table>

@@ -16,4 +16,5 @@
 //= require underscore
 //= require backbone
 //= require bootstrap.min
+//= require jquery-dateFormat
 //= require_tree .
