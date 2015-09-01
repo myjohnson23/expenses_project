@@ -12,6 +12,9 @@ Too many budget apps are too busy.  They make it to where you do not want to dea
 
 In order to use the application a user needs to register an account and create a username and password.  Upon logging in, the user will see the goals, green showing below a goal and red reflecting a goal has been exceeded.
 
+## Wireframe
+
+![wireframe]: (http://imgur.com/7nTdj9t)
 
 ## Technology
 
