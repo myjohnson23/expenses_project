@@ -14,7 +14,7 @@ In order to use the application a user needs to register an account and create a
 
 ## Wireframe
 
-![wireframe] (http://imgur.com/7nTdj9t)
+![wireframe] (http://http://i.imgur.com/7nTdj9t.png)
 
 ## Technology
 
