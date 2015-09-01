@@ -9,19 +9,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <a href="home"></a>
   <div class="container">
 
   </div>
 <header class="row">
   <h1 class="col-xs-6 col-md-6">SB</h1>
-  <nav>
-    <ul>
-      <li></li>
-      <li></li>
+  <nav class="col-xs-6 col-md-6 navbar">
+    <ul class="nav">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</span></a></li>
     </ul>
   </nav>
 </header>
 <%= yield %>
-<footer>&amp;2015 Myron Johnson</footer>
+
+<div id="about">
+  <a href="about"></a>
+  <h3>Use this app to keep a track on your day to day expenditures</h3>
+</div>
+
+<footer id="row">
+  <span>&copy; 2015 Myron Johnson</span>
+</footer>
 </body>
 </html>

@@ -4,7 +4,7 @@
           <td class="shortDateFormat"><%%= jQuery.format.toBrowserTimeZone(date, "yyyy/MM/dd")  %></td>
           <td><%%= description %></td>
           <td><%%= category %></td>
-          <td><%%= amount %></td>
+          <td>$<%%= amount %></td>
         </tr>
 
 </script>
@@ -13,6 +13,12 @@
 
 <h1>Expenses and Budget</h1>
 
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><h3>Transactions</h3></div>
+  <div class="panel-body">
+    <p>Enter and view transactions</p>
+  </div>
 <table class="table table-striped">
   <thead>
       <tr>
@@ -46,3 +52,4 @@
     </tr> -->
   </tbody>
 </table>
+</div>
