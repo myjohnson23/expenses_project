@@ -45,6 +45,10 @@ $(document).ready(function(event){
     el: $('#expenses-list')
   });
 
+  $('#deleteButton').on('click', function(){
+    // var temp = $('#deleteButton').closest('tr').html();
+    console.log('ouch');
+  });
 });
 
 jQuery(function() {
